@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwre6y52c40h"]
+[gd_scene load_steps=3 format=3 uid="uid://bwre6y52c40h"]
 
 [ext_resource type="Script" uid="uid://bekc58guk4j34" path="res://addons/graph_tool/graph_dock.gd" id="1_rye7q"]
+[ext_resource type="PackedScene" uid="uid://c3jd0pv2ki3s2" path="res://prefabs/diagram/class.tscn" id="2_2g535"]
 
 [node name="GraphDock" type="Control"]
 layout_mode = 3
@@ -23,48 +24,13 @@ offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GraphNode" type="GraphNode" parent="GraphEdit"]
-layout_mode = 0
-offset_left = 100.0
-offset_top = 100.0
-offset_right = 217.0
-offset_bottom = 178.0
+[node name="Class" parent="GraphEdit" instance=ExtResource("2_2g535")]
+layout_mode = 1
+offset_left = 268.0
+offset_top = 129.0
+offset_right = 468.0
+offset_bottom = 329.0
+grow_horizontal = 1
+grow_vertical = 1
 mouse_filter = 1
-position_offset = Vector2(100, 100)
-title = "Node A"
-slot/0/left_enabled = true
-slot/0/left_type = 0
-slot/0/left_color = Color(1, 1, 1, 1)
-slot/0/left_icon = null
-slot/0/right_enabled = true
-slot/0/right_type = 0
-slot/0/right_color = Color(1, 1, 1, 1)
-slot/0/right_icon = null
-slot/0/draw_stylebox = true
-
-[node name="Label" type="Label" parent="GraphEdit/GraphNode"]
-layout_mode = 2
-text = "MOIN"
-
-[node name="GraphNode2" type="GraphNode" parent="GraphEdit"]
-layout_mode = 2
-offset_left = 457.0
-offset_top = 131.0
-offset_right = 538.0
-offset_bottom = 209.0
-mouse_filter = 1
-position_offset = Vector2(457, 131)
-title = "Node A"
-slot/0/left_enabled = true
-slot/0/left_type = 0
-slot/0/left_color = Color(1, 1, 1, 1)
-slot/0/left_icon = null
-slot/0/right_enabled = true
-slot/0/right_type = 0
-slot/0/right_color = Color(1, 1, 1, 1)
-slot/0/right_icon = null
-slot/0/draw_stylebox = true
-
-[node name="Label" type="Label" parent="GraphEdit/GraphNode2"]
-layout_mode = 2
-text = "MOIN"
+position_offset = Vector2(268, 129)

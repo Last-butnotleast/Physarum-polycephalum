@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cmucdhc5ldu8j"]
+
+[node name="FieldDeclaration" type="GraphElement"]
+offset_left = 18.0
+offset_top = 43.0
+offset_right = 182.0
+offset_bottom = 43.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "private static Test"
